@@ -1,1 +1,1 @@
-import turtle
+#Veszprémi Zalán, 1. csoport, Jelzőlámpa
