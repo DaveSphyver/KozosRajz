@@ -1,50 +1,41 @@
-#Veszprémi Zalán, 1. csoport, Jelzőlámpa
+#Veszprémi Zalán, Jelzőlámpa
 #Szalai Dávid, Jelzőlámpa
 
 import turtle
 
-#Alapbeallitas
-turtle.speed(0)
-turtle.pensize(3)
+#alap
 turtle.bgcolor("lightblue")
-turtle.goto(0, -250)
+turtle.speed(0)
 
-#Oszlop
-turtle.color("gray")
+#korok
+turtle.penup()
+turtle.goto(0, 200)
+turtle.pendown()
+
+#piros
+turtle.color("red")
 turtle.begin_fill()
-
-i=0
-
-while i<2 :
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(300)
-    turtle.left(90)
-
-    i+=1
-
+turtle.circle(40)
 turtle.end_fill()
 
-turtle.left(90)
-turtle.forward(300)
-turtle.left(90)
+turtle.penup()
+turtle.goto(0, 80)
+turtle.pendown()
 
-#Láma Alap
-turtle.color("black")
+#sarga
+turtle.color("yellow")
 turtle.begin_fill()
+turtle.circle(40)
+turtle.end_fill()
 
-turtle.forward(50)
+#zold
+turtle.penup()
+turtle.goto(0, -40)
+turtle.pendown()
 
-turtle.right(90)
-turtle.forward(250)
-turtle.right(90)
-turtle.forward(150)
-turtle.right(90)
-turtle.forward(250)
-
-turtle.right(90)
-turtle.forward(50)
-
+turtle.color("green")
+turtle.begin_fill()
+turtle.circle(40)
 turtle.end_fill()
 
 turtle.done()
